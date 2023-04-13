@@ -17,7 +17,7 @@ if __name__ == '__main__':
 
 
 def encrypt(text):
-    cipher = 3
+    cipher = 31
     result = ""
     for i in range(len(text)):
         char = text[i]
@@ -38,3 +38,5 @@ def decrypt(text):
         else:
             result += chr((ord(char) + cipher - 97) % 26 + 97)
         return result
+def test():
+    print('1231213123')
